@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/x-icon">
+    <title>Minting</title>
+</head>
+<body class="bg-mintpage-background">
+<header>
+    <nav class="relative container mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <!-- katsco logo -->
+                <img width = "170px" height = "106px" src="../assets/NavLogo.svg" alt="">
+            </div>
+            <div class="relative">
+                <div class="flex space-x-6">
+                    <!-- hyperlinks (webcomic.html) and it is also indicating where you are currently-->
+                    <div class="hidden md:flex space-x-6 mt-2 lg:text-xl ">
+                        <a   href="Webcomic.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Webcomic</a>
+                        <a   class="text-white font-bold rounded-full px-2 text-gradient bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">
+                            Mint
+                        </a>
+                    </div>
+                    <!-- connect wallet button -->
+                    <div class="flex">
+                        <a href="#" id = "click-me" class="text-center relative p-2 md:px-10 p-1 text-white bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue rounded-full baseline hover:text-black text-sm md:text-lg">
+                            <b>Connect Wallet</b>
+                        </a>
+                        <!-- hamburger menu button -->
+                        <button id="menu-btn" class="md:hidden sm:mx-2 mt-2 text-center block hamburger focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- hyperlinks for phone screen  -->
+    <div class="md:hidden">
+        <div id="menu" class="hidden flex-col item-center seld-end py-8 mt-10 space-y-6 font-bold bg-mint-page rounded-xl text-white sm:w-auto">
+            <a href="Webcomic.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold">Webcomic</a>
+            <a href="mintPage.html" class="text-white font-bold text-center rounded-full bg-purple-400 ">Mint</a> 
+        </div>
+    </div>
+</header>
+<main id="mint-page" class="mx-auto flex flex-col justify-center items-center">
+    <!-- big circle visibility mode: only for big screen --> 
+    <div class="bg-mintpage-background  rounded-full flex flex-col items-center justify-center md:w-128 md:h-128 md:bg-circle-color">
+        <!-- <div class="bg-white rounded-full z-[-1] w-1/2 h-1/2"></div> -->
+        <figure class="flex justify-center border-b-2 w-1/2">
+            <!-- webcomic logo -->
+            <img class = "" src="../assets/mainlogo without background.svg" alt="">
+        </figure>
+        <!-- few content -->
+        <h1 class="text-center text-white font-ComicNeue text-3xl my-3">
+            <a class="underline">MINT MULTI META</a>
+        </h1>
+        <div>
+            <p class="text-center text-white font-amiko">WHAT PAYMENT METHOD WILL YOU USE?</p>
+            <form class="mt-2 flex justify-center font-amiko">
+                <label><input id="crypto" type="radio" name="currency" value="crypto"><p class="mx-2 text-btncolor inline-block"> CRYPTO </p></label>
+                <label><input id="fiat" type="radio" class="mx-1" name="currency" value="fiat"><p class="text-btncolor inline-block"> FIAT </p></label>
+            </form>
+        </div>
+        <!-- payment gateway button -->
+        <div class="mt-8">
+            <a href="#" id="mint-button" type="submit" class=" p-3 font-amiko bg-btncolor text-black  rounded-xl hover:text-blue-900">MINT</a>
+        </div>
+    </div>
+    <footer class="mt-[150px]">
+        <p class="3xl text-center text-white font-bold">KatsCo Group LLC 2021.</p>
+    </footer>
+</main>
+    <script type="module" src="../js/secondPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/x-icon">
+    <title>TokenGate1</title>
+</head>
+<body class="bg-mainbackground">
+<header>
+    <!-- Here is the nagigation bar starts -->
+    <nav class="relative container mx-auto">
+        <!-- main logo (KatsCo logo)  -->
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <img width = "170px" height = "106px" src="../assets/NavLogo.svg" alt="">
+            </div>
+            <div class="relative">
+                <div class="flex space-x-6">
+                    <!-- all the other hyper links for webcomic and mintpage -->
+                    <div class="hidden md:flex space-x-6 mt-2 lg:text-xl ">
+                        <a  href="Webcomic.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Web Comic</a>
+                        <a  href="mintPage.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Mint</a>
+                        <a  class="text-white font-bold rounded-full text-gradient bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue">TokenGate</a>
+                    </div>
+                    <!-- connect wallet button -->
+                    <div class="flex">
+                        <a href="#" id = "click-me" class="text-center relative p-2 md:px-10 p-1 text-white bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue rounded-full baseline hover:text-black text-sm md:text-lg">
+                            <b>Connect Wallet</b>
+                        </a>
+                        <!-- hamburger menu button -->
+                        <button id="menu-btn" class="md:hidden sm:mx-2 mt-2 text-center block hamburger focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hamburger menu content for phone only (hyperlinks for phone) -->
+        <div class="md:hidden">
+            <div id="menu" class="hidden flex-col item-center seld-end py-8 mt-10 space-y-6 font-bold bg-awseem rounded-xl text-white sm:w-auto">
+                <a href="Webcomic.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Webcomic</a>
+                <a href="mintPage.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Mint</a>
+                <a class="text-white font-bold text-center rounded-full bg-purple-400 ">TokenGate</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- few info about page -->
+    <div class="relative max-w-6xl px-5 mx-auto mt-20 text-center md:text-3xl">
+        <h2 class="font-newfont text-white text-center tracking-widest">
+            CONNECT YOUR MULTIMETA COVEER
+        </h2>
+        <div class=" md:w-128 mx-auto mt-3 top-0 -left-4 w-80 h-1 bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue rounded-full"></div>
+        <!-- multi meta comic logo -->
+        <img class="mx-auto w-96" src="../assets/mainLogo.svg" alt="">
+        <h2 class="font-bold text-white text-center tracking-wide">
+            The Multimeta cover is your key to adventure
+        </h2>
+        <!-- brown shade -->
+        <div class="md:w-128 mx-auto mt-20 w-96 h-7 rounded-full bg-gradient-to-r from-brown" ></div>
+    </div>
+</main>
+    <footer class="mt-[60px]">
+        <h2 class="bottom-0 text-white text-center">@KatsCo Group LLC 2021.</h2>
+    </footer>
+    <!-- adding javascript  -->
+    <script type="module" src="../js/secondPage.js"></script>
+</body>
+</html>
+

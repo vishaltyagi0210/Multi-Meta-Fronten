@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>WEBCOMIC</title>
+</head>
+<body id="first-page" class="bg-mainbackground">
+<header>
+    <nav class="relative container mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <!-- Nav bar katsCo logo -->
+                <img width = "170px" height = "106px" src="../assets/NavLogo.svg" alt="">
+            </div>
+            <div class="relative">
+                <div class="flex space-x-6">
+                    <!-- Hyper links for going other pages (Mintpage) and it is also indicating where you are right now -->
+                    <div class="hidden md:flex space-x-6 mt-2 lg:text-xl ">
+                        <a   href="mintPage.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Mint</a>
+                        <a   href="" class="text-white font-bold rounded-full text-gradient bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue">Webcomic</a>
+                    </div>
+                    <div class="flex">
+                        <!-- connect wallet button -->
+                        <a href="#" id = "click-me" class="text-white font-bold text-center relative p-2 md:px-10 p-1 bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue rounded-full baseline hover:text-black text-sm md:text-lg">
+                            Connect Wallet
+                        </a>
+                        <!-- hamburger menu button -->
+                        <button id="menu-btn" class="md:hidden sm:mx-2 mt-2 text-center block hamburger focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- hamburger menu content for phones only (hyperlinks) -->
+    <div class="md:hidden">
+        <div id="menu" class="hidden flex-col item-center seld-end py-8 mt-10 space-y-6 font-bold bg-awseem rounded-xl text-white sm:w-auto">
+            <a href="mintPage.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Mint</a>
+            <a href="Webcomic.html" class="text-white font-bold text-center rounded-full bg-purple-400 ">Webcomic</a>
+        </div>
+    </div>
+<main>
+    <!-- girl image with planet visibility mode: only for big screen -->
+    <div class = "hidden lg:flex absolute z-[-1] right-0 top-0">
+        <img src="../assets/Rectangle 9.svg" alt="Image">
+    </div>
+    <section>
+        <div class="container flex flex-col lg:flex-row items-center px-4 mx-auto mt-8 space-y-0 md:space-y-0">
+            <!-- comic logo  -->
+            <div>
+                <img class="w-96" src="../assets/mainLogo.svg" alt="">
+            </div>
+        </div>
+        <!-- description about meta comic -->
+        <div class="container flex flex-col lg:flex-row items-center px-10 mx-auto mt-10 space-y-0 md:space-y-0">
+            <div class="text-white font-intel tracking-wide text-xl ">
+                <h1 class="text-aqua font-bold tracking-widest">MULTIMETA IS A NFT WEBCOMIC BOOK.</h1>
+                <br>
+                <p class="flex w-full lg:w-128">Multimeta is your ticket to a play-to-earn
+                community-driven ecosystem.Bringing
+                creators and gamers together under one brand
+                which they can grow to love as they
+                progressively dive deeper into the lore.Patreons
+                of this new world revolving exclusively to
+                storytelling and myth becoming the reality.
+                Would you be part of ths adventure?</p>
+            </div>
+        </div>
+        <!-- hyperlink which redirects you to tokengate 1  -->
+        <div id="enter-portal" class="container flex flex-col items-center px-10 mx-auto mt-10 lg:flex-row">
+            <a href="TokenGate1.html"
+                class="relative p-2 px-10 p-1 text-white bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue rounded-full baseline hover:text-black">
+                <b>ENTER PORTAL</b>
+            </a>
+        </div>
+    </section>
+    <!-- all the social media hyperlinks -->
+    <section class=" p-10 flex sm:justify-center md:justify-center lg:justify-end">
+        <div class=" space-x-4 flex mt-20 bg-black w-1/8 border-2 rounded-full">
+            <a href="https://discord.gg/7CT4c78ctq"><i class="mx-2 text-white fa-brands fa-discord hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue "></i></a>
+            <a href=""><i class="mx-2 text-white fa-brands fa-twitter hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue"></i></a>
+            <a href=""><i class="mx-2 text-white fa-brands fa-facebook hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue"></i></a>
+            <a href=""><i class="mx-2 text-white fa-brands fa-github hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue"></i></a>
+            <!-- <a href=""><img src="../assets/opensea logo.svg" alt=""></a> -->
+        </div>
+    </section>
+</main>
+    <footer>
+        <h2 class="p-1 3xl text-center text-white">@KatsCo Group LLC 2021.</h2>
+    </footer>
+    <script type="module" src="../js/secondPage.js"></script>
+</body>
+</html>

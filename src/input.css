@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .text-gradient{
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    #mint-page{
+        background-image: url('../assets/two-girls-side.svg');
+        background-size: cover;
+    }
+}
+
+/* hamburger */
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+
+.bg-awseem{
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(60, 116, 222, 0.9);
+    border: 1px solid #C084FC;
+}
+
+.bg-mint-page{
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px rgba(60, 116, 222, 0.9); */
+    border: 1px solid #C084FC;
+}
