@@ -28,25 +28,29 @@ window.addEventListener('load', (e)=>{
 });
 
 // enter portal function 
-Enter_Portal.addEventListener('click' , async ()=>{
-    if(window.ethereum){
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const MultiMetaContract = new ethers.Contract(MultiMetaAddress , MultiMeta.abi , signer);
-        try{
-            const response = await MultiMetaContract.balanceOf();
-            console.log(response);
-        }catch(error){
-            alert(error);
-            // console.error(error);
-            // check for the revert reason in the error message
-            // if (err.message.includes("revert")) {
-            //     let revertMessage = err.message.split("revert")[1].trim()
-            //     console.log("Revert reason:", revertMessage)
-            // }
-        }
-    }
-});
+// Enter_Portal.addEventListener('click' , async ()=>{
+//     if(typeof window.ethereum !== 'undefined' && ethereum.isMetaMask){
+//         const provider = new ethers.providers.Web3Provider(window.ethereum);
+//         const signer = provider.getSigner();
+//         const MultiMetaContract = new ethers.Contract(MultiMetaAddress , MultiMeta.abi , signer);
+//         try{
+//             // by chat gpt
+//                 // window.ethereum.enable().then(function (address) {
+//                 //     console.log(address[0]);
+//                 // });
+//             // const response = await MultiMetaContract.balanceOf(signer.address);
+//             // console.log(response);
+//         }catch(error){
+//             alert(error.message);
+//             // console.error(error);
+//             // check for the revert reason in the error message
+//             // if (err.message.includes("revert")) {
+//             //     let revertMessage = err.message.split("revert")[1].trim()
+//             //     console.log("Revert reason:", revertMessage)
+//             // }
+//         }
+//     }
+// });
 
 btn.addEventListener('click',() =>{
     btn.classList.toggle('open')
