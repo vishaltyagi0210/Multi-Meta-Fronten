@@ -4,6 +4,7 @@
   "description": "KatsCo lmint page",
   "main": "index.js",
   "scripts": {
+    "start": "live-server ./ ",
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.13",
+    "live-server": "^1.2.2",
     "tailwindcss-intersect": "^1.0.1"
   }
 }
