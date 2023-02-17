@@ -13,23 +13,24 @@
     <nav class="relative container mx-auto">
         <div class="flex items-center justify-between">
             <div class="pt-2">
-                <!-- Nav bar katsCo logo -->
+                <!-- Nav bar logo -->
                 <img width = "170px" height = "106px" src="../assets/NavLogo.svg" alt="">
             </div>
+                <!-- Nav bar content -->
             <div class="relative">
                 <div class="flex space-x-6">
                     <!-- Hyper links for going other pages (Mintpage) and it is also indicating where you are right now -->
                     <div class="hidden md:flex space-x-6 mt-2 lg:text-xl ">
                         <a   href="mintPage.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Mint</a>
-                        <a   href="" class="text-white font-bold rounded-full text-gradient bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue">Webcomic</a>
+                        <a   href="index.html" class="text-white font-bold rounded-full text-gradient bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue">Webcomic</a>
                     </div>
                     <div class="flex">
                         <!-- connect wallet button -->
-                        <a href="#" id = "click-me" class="text-white font-bold text-center relative p-2 md:px-10 p-1 bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue rounded-full baseline hover:text-black text-sm md:text-lg">
+                        <a href="#" id = "connect-wallet" class="text-white font-bold text-center relative p-2 md:px-10 p-1 bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue rounded-full baseline hover:text-black text-sm md:text-lg">
                             Connect Wallet
                         </a>
-                        <!-- hamburger menu button -->
-                        <button id="menu-btn" class="md:hidden sm:mx-2 mt-2 text-center block hamburger focus:outline-none">
+                        <!-- hamburger menu button for mobile device -->
+                        <button id="hamburger-menu" class="md:hidden sm:mx-2 mt-2 text-center block hamburger focus:outline-none">
                             <span class="hamburger-top"></span>
                             <span class="hamburger-middle"></span>
                             <span class="hamburger-bottom"></span>
@@ -42,9 +43,9 @@
 </header>
     <!-- hamburger menu content for phones only (hyperlinks) -->
     <div class="md:hidden">
-        <div id="menu" class="hidden flex-col item-center seld-end py-8 mt-10 space-y-6 font-bold bg-awseem rounded-xl text-white sm:w-auto">
+        <div id="nav-option" class="hidden flex-col item-center seld-end py-8 mt-10 space-y-6 font-bold bg-awseem rounded-xl text-white sm:w-auto">
             <a href="mintPage.html" class="text-white font-bold rounded-full px-2 hover:text-gradient hover:bg-gradient-to-r from-radient-blue via-radient-bangani to-radient-dark-blue hover:font-bold ">Mint</a>
-            <a href="Webcomic.html" class="text-white font-bold text-center rounded-full bg-purple-400 ">Webcomic</a>
+            <a href="index.html" class="text-white font-bold text-center rounded-full bg-purple-400 ">Webcomic</a>
         </div>
     </div>
 <main>
@@ -96,6 +97,6 @@
     <footer>
         <h2 class="p-1 3xl text-center text-white">@KatsCo Group LLC 2021.</h2>
     </footer>
-    <script type="module" src="../js/secondPage.js"></script>
+    <script type="module" src="../js/index.js"></script>
 </body>
 </html>
